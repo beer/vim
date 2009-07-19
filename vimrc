@@ -34,9 +34,7 @@ inoremap <C-A> <C-O>gg<C-O>gH<C-O>G
 cnoremap <C-A> <C-C>gggH<C-O>G
 
 " CTRL+N is new tab
-noremap <C-N> :tabe<CR>
-inoremap <C-N> <C-O>:tabe<CR>
-cnoremap <C-N> <C-C>:tabe<CR>
+noremap <C-I> :tabe<CR>
 
 " CTRL+[ is previous tab
 map <C-]> :tabp<CR>
