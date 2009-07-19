@@ -17,6 +17,7 @@ set termencoding=utf8
 
 syntax on
 
+
 au BufNewFile,BufRead *.phtml set filetype=php
 au BufNewFile,BufRead *.tt setf tt2
 au FileType javascript so ~/.vim/indent/javascript.vim
