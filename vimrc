@@ -13,6 +13,7 @@ set softtabstop=4
 set bs=2
 set t_Co=256
 set termencoding=utf8
+set foldmethod=indent
 " set completeopt=longest,menu
 " set dictionary-=~/.vim/funclist.txt
 
