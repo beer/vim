@@ -9,7 +9,7 @@ set nu
 set ru
 set secure
 set sw=4
-set softtabstop=4
+set softtabstop=2
 set bs=2
 set t_Co=256
 set termencoding=utf8
