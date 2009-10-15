@@ -9,13 +9,15 @@ set nu
 set ru
 set secure
 set sw=4
-set softtabstop=4
+"set softtabstop=4
 set bs=2
 set t_Co=256
 set termencoding=utf8
 set foldmethod=indent
 " set completeopt=longest,menu
 " set dictionary-=~/.vim/funclist.txt
+"
+autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et
 
 syntax on
 
@@ -52,3 +54,17 @@ map <C-\> :tabn<CR>
 
 " CTRL+d is close tab
 noremap <C-D> :tabc<CR>
+
+" http://fourdollars.blogspot.com/2009/10/vim-python.html
+function! s:python_custom()
+    function! s:man(keyword)
+	execute '!pydoc ' . a:keyword
+    endfunction
+    setlocal tabstop=4 expandtab shiftwidth=4
+    setlocal foldmethod=indent foldcolumn=4 foldlevel=3 foldnestmax=3
+    command! -nargs=1 Man call s:man(<f-args>)
+    cnoremap K :!pydoc <cword><CR>
+endfunction
+if has("autocmd")
+    autocmd Filetype python call s:python_custom()
+endif
