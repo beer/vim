@@ -216,3 +216,25 @@ snippet fun
 # $... = array (...)
 snippet array
 	$${1:arrayName} = array('${2}' => ${3});${4}
+
+# html
+
+snippet script
+	<script type="text/javascript" charset="utf-8">
+		${1}
+	</script>${2}
+snippet scriptsrc
+	<script src="${1}.js" type="text/javascript" charset="utf-8"></script>${2}
+snippet style
+	<style type="text/css" media="${1:screen}">
+		${2}
+	</style>${3}
+snippet r
+	<br`Close()[1:]`>
+snippet div
+	<div id="${1:name}">
+		${2}
+	</div>
+snippet !
+	<!--${1}-->
+	

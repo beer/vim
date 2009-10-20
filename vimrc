@@ -1,6 +1,7 @@
 set background=dark
 set cindent
 set cursorline
+set cursorcolumn
 set encoding=utf8
 set fileencoding=utf8
 set fileencodings=utf8,cp950,latin1
